@@ -1,0 +1,56 @@
+name: Build and Publish Static Site Branch
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "gh-page-branch"
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate markdown entries
+        run: npm run validate
+
+      - name: Build people index
+        run: npm run build:index
+
+      - name: Prepare static output
+        run: |
+          rm -rf site
+          mkdir -p site
+
+          cp -R assets site/assets
+          cp -R data site/data
+          cp index.html people.html person.html about.html README.md .nojekyll site/
+
+          if [ -f CNAME ]; then cp CNAME site/; fi
+          if [ -f robots.txt ]; then cp robots.txt site/; fi
+          if [ -f sitemap.xml ]; then cp sitemap.xml site/; fi
+
+      - name: Publish to gh-page branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-page
+          force_orphan: true
+          commit_message: "chore: publish static site from ${{ github.sha }}"

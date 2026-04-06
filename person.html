@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>人物详情 | 汉奸档案馆</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">汉奸档案馆</a>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="people.html" class="active">人物档案</a>
+      <a href="https://github.com/evilwisdom2025/Archive-of-Chinese-Traitors" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <a class="back-link" href="people.html">← 返回档案列表</a>
+    <article class="person-article">
+      <header class="person-header">
+        <img id="person-avatar" class="person-avatar" src="assets/images/default-avatar.svg" alt="人物头像" />
+        <div>
+          <h1 id="person-name">加载中...</h1>
+          <p id="person-meta"></p>
+        </div>
+      </header>
+      <div id="person-content" class="markdown-body"></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">© 2026 汉奸档案馆</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script type="module" src="assets/js/person.js"></script>
+</body>
+</html>

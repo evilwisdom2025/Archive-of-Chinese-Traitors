@@ -1,0 +1,12 @@
+{
+  "name": "archive-of-chinese-traitors",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-people.mjs",
+    "build:index": "node tools/build-people-index.mjs",
+    "build": "npm run validate && npm run build:index",
+    "serve": "python3 -m http.server 8000"
+  }
+}

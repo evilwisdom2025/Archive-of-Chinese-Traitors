@@ -1,0 +1,48 @@
+[
+  {
+    "id": "li-si",
+    "name": "李四",
+    "alias": "某四",
+    "organization": "示例机构B",
+    "avatar": "data/avatars/li-si.svg",
+    "pinned": false,
+    "summary": "这里是李四的示例条目，展示多人协作维护的基础写法。",
+    "tags": [
+      "学术",
+      "外宣"
+    ],
+    "updated": "2026-03-01",
+    "markdown": "data/people/li-si.md"
+  },
+  {
+    "id": "xi-jinping",
+    "name": "习近平",
+    "alias": "习",
+    "organization": "中共中央",
+    "avatar": "data/avatars/xi-jinping.jpeg",
+    "pinned": true,
+    "summary": "该条目围绕习近平执政时期的制度争议进行整理，核心观点包括：反腐个人化、法治工具化、意识形态替代治理、修宪连任削弱制度约束，以及“爱党爱国”话语的私人化倾向。",
+    "tags": [
+      "政治",
+      "修宪",
+      "集权"
+    ],
+    "updated": "2026-03-07",
+    "markdown": "data/people/xi-jinping.md"
+  },
+  {
+    "id": "zhang-san",
+    "name": "张三",
+    "alias": "某三",
+    "organization": "示例机构A",
+    "avatar": "data/avatars/zhang-san.svg",
+    "pinned": false,
+    "summary": "这里是张三的示例条目。建议在正式录入时，避免主观判断，优先写可核查事实。",
+    "tags": [
+      "经济",
+      "舆论"
+    ],
+    "updated": "2026-03-07",
+    "markdown": "data/people/zhang-san.md"
+  }
+]

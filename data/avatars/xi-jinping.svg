@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="习近平头像">
+  <rect width="240" height="240" fill="#eadfce"/>
+  <circle cx="120" cy="92" r="44" fill="#8d7762"/>
+  <path d="M34 216c8-49 38-76 86-76s78 27 86 76" fill="#8d7762"/>
+  <text x="120" y="224" text-anchor="middle" font-size="20" fill="#5f4b37" font-family="serif">习近平</text>
+</svg>
