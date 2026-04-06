@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="李四头像">
+  <rect width="240" height="240" fill="#efe7d9"/>
+  <circle cx="120" cy="92" r="44" fill="#9787a6"/>
+  <path d="M34 216c8-49 38-76 86-76s78 27 86 76" fill="#9787a6"/>
+  <text x="120" y="224" text-anchor="middle" font-size="20" fill="#5e4d70" font-family="serif">李四</text>
+</svg>
